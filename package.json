@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "dev": "vite",
+    "dev": "vite --host",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -15,6 +15,7 @@
     "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
     "react-router-dom": "^6.12.1"
   },
   "devDependencies": {
