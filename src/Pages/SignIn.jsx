@@ -6,6 +6,7 @@ export default function SignIn() {
 
     return <form className='bg-indigo-300 md:w-[468px] w-[90dvw] p-3 rounded'>
         <h1 className="text-3xl font-bold">Sign In</h1>
+        <br />
         <div>
             <label htmlFor="" className="p-2 rounded-md flex flex-col gap-1">
                 <span>Username</span>
@@ -20,6 +21,10 @@ export default function SignIn() {
                     }} className={`  cursor-pointer absolute right-1 p-1 top-1/2 -translate-y-1/2 fa-solid ${password ? 'fa-eye-slash' : 'fa-eye'}`}></i>
                 </span>
             </label>
+        </div>
+        <br />
+        <div className='text-center'>
+            <button className='bg-indigo-600 text-white rounded-md p-2' type='submit'>Sign In</button>
         </div>
     </form>
 }
